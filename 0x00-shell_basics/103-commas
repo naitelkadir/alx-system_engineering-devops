@@ -1,2 +1,2 @@
 #!/bin/bash    
-ls -1a | tr '\n' ','
+{ ls -A -1 --ignore=*[^0-9A-Za-z]* .*; ls -A -1 --ignore=.*; } | tr '\n' ',' | sed 's/,/,\n/g'
