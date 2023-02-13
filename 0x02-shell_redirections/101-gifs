@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*.gif" -print0 | xargs -0 -I {} echo {} | sed -E 's/.*\/(.*)\.[^.]+$/\1/' | sort -f -b | awk '{ printf "%s\n", $0 }'
+find . -depth -type f -name "*.gif" -printf %f'\n'| LC_ALL=C sort -f 
