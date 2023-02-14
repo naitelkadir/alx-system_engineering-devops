@@ -1,2 +1,2 @@
 #!/bin/bash
-set name="BEST" value="School"
+set BEST=School
