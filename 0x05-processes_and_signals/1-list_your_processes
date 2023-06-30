@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Displays a list of current running
+# shows all process
+#+ which not have TTY
+
+ps -auxf
